@@ -29,6 +29,12 @@
    2. `{}` represents anything with 0 or more properties
       1. to represent empty object: `Record<string, never>`
       2. to represent anything: `Record<string, unknown>`
+6. Conditionally Require Props with Discriminated Unions
+   1. `src/04-advanced-props/27-either-all-these-props-or-none.problem.tsx`
+   2. `{}` is too permissive
+      1. make keys optional and `undefined`
+      2. `never` works too, but because it basically gets reduced to `undefined`
+      3. a bit verbose, can be turned into a type helper
 
 
 
