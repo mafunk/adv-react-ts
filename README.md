@@ -43,7 +43,13 @@
       1. get some extras too; displayName
    5. opinion: prefer the explicity of `(index: number) => ReactNode`
       1. helpful for forwardRef stuff
-      2. `ReactNode` is how you type children anyways 
+      2. `ReactNode` is how you type children anyways
+8. Syncing Types without Manual Updates
+   1. `src/04-advanced-props/29-variants-with-classnames.problem.tsx`
+   2. this is what we use instead of enum
+   3. `keyof typeof objectDictionary`
+      1. `typeof` turns runtime object into a type
+   4. allows for data structures that can be inferred all the way down
 
 
 

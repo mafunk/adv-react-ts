@@ -2,7 +2,11 @@ const classNamesMap = {
   primary: "bg-blue-500 text-white",
   secondary: "bg-gray-200 text-black",
   success: "bg-green-500 text-white",
-};
+} as const;
+
+type VariantMap = typeof classNamesMap;
+type VariantKey = keyof VariantMap;
+type VariantValue = VariantMap[VariantKey];
 
 type ButtonProps = {
   /**
@@ -14,7 +18,7 @@ type ButtonProps = {
    *
    * Hint: you'll need 'typeof' and 'keyof'.
    */
-  variant: "primary" | "secondary" | "success";
+  variant: VariantKey;
 };
 
 export const Button = (props: ButtonProps) => {
