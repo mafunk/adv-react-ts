@@ -1,5 +1,7 @@
 # Notes
 
+## Advanced Props
+
 1. Discriminated Union Props
    1. `src/04-advanced-props/22-discriminated-union-props.problem.tsx`
    2. used for flexible component props
@@ -67,6 +69,17 @@
     3.  index access types `TYPE[number]`, `TYPE[string]`
     4.  this is basically what we use as enum
 11. Ensuring Correct Inference for Prop Types
+    1.  `src/04-advanced-props/32-satisfies-vs-annotation-vs-as.problem.tsx`
+    2.  `as const`
+        1.  lacks error or autocomplete within the object
+    3.  `as ComponentProps<"button">`
+        1.  does the transformation but no validation on the props
+    4.  `satisfies ComponentProps<"button">`
+        1.  does not override the type
+        2.  ensure object validates type
+        3.  allows autocomplete
+        4.  should not be the default/go to
+12. Inference from a Single Source of Truth
 
 
 
