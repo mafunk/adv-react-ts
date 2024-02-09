@@ -1,4 +1,4 @@
-const Component = (props: { config: {} }) => {
+const Component = (props: { config: Record<string, unknown> }) => {
   return <div />;
 };
 

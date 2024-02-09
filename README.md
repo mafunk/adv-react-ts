@@ -23,7 +23,13 @@
    1. `src/04-advanced-props/25-toggle-props.problem.tsx`
    2. discriminated unions but with boolean
    3. use disc union; split into 2 diff categories
-      1. can make the discriminator optional in the secondary type
+      1. can make the discriminator optional in the secondary type(false variation)
+5. Record Type for Empty Object
+   1. `src/04-advanced-props/26-empty-object-type.explainer.tsx`
+   2. `{}` represents anything with 0 or more properties
+      1. to represent empty object: `Record<string, never>`
+      2. to represent anything: `Record<string, unknown>`
+
 
 
 
