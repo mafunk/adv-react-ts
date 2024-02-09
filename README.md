@@ -35,6 +35,15 @@
       1. make keys optional and `undefined`
       2. `never` works too, but because it basically gets reduced to `undefined`
       3. a bit verbose, can be turned into a type helper
+7. Type Def for a Mapped Component
+   1. `/src/04-advanced-props/28-passing-react-components-vs-passing-react-nodes.problem.tsx`
+   2. `ReactNode` doesn't represent a component but a member of jsx(what you can render)
+   3. can use `(index: number) => ReactNode`
+   4. can use `FC<number>`; basically an alias of the above
+      1. get some extras too; displayName
+   5. opinion: prefer the explicity of `(index: number) => ReactNode`
+      1. helpful for forwardRef stuff
+      2. `ReactNode` is how you type children anyways 
 
 
 

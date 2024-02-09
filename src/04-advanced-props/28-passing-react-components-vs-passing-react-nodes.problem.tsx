@@ -8,7 +8,7 @@ import { Equal, Expect } from "../helpers/type-utils";
  * find a way to fix them by changing the definition of TableProps.
  */
 interface TableProps {
-  renderRow: React.ReactNode;
+  renderRow: React.FC<number>;
 }
 
 const Table = (props: TableProps) => {
@@ -25,7 +25,7 @@ export const Parent = () => {
         }}
       />
       <Table
-        renderRow={(index) => {
+        renderRow={(_index) => {
           return null;
         }}
       />
