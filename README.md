@@ -80,6 +80,12 @@
         3.  allows autocomplete
         4.  should not be the default/go to
 12. Inference from a Single Source of Truth
+    1.  `src/04-advanced-props/33-prop-groups-with-variants.problem.tsx`
+    2.  variant doesn't get autocomplete when using `buttonPropsMap: Map`
+        1.  gets typed as string
+    3.  `satisfies Map`
+        1.  allows variant to be inferred
+        2.  doesn't override type
 
 
 

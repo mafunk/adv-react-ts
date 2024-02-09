@@ -1,5 +1,7 @@
 import { ComponentProps } from "react";
 
+type Map = Record<string, ComponentProps<"button">>;
+
 const buttonPropsMap = {
   reset: {
     className: "bg-blue-500 text-white",
@@ -19,7 +21,7 @@ const buttonPropsMap = {
     // @ts-expect-error
     illegalProperty: "whatever",
   },
-};
+} satisfies Map;
 
 type ButtonProps = {
   variant: keyof typeof buttonPropsMap;
