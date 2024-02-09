@@ -12,8 +12,10 @@
  */
 
 type EmbeddedPlaygroundProps = {
-  useStackblitz?: boolean;
+  useStackblitz: true;
   stackblitzId?: string;
+} | {
+  useStackblitz?: false | undefined;
   codeSandboxId?: string;
 };
 

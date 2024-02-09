@@ -11,12 +11,19 @@
       2. if you separate the discriminator from the rest of what it is discriminating
          1. TS can't apply what it understands to the rest of the prop
       3. if keen on destructuring, destructure within the if/else scope
+      4. opinion: just use high level props and `props.something`
 3. Discriminated Union With Other Props
    1. `src/04-advanced-props/24-discriminated-union-with-other-props.problem.tsx`
    2. use intersection `&`
       1. be careful with perttier parens
          1. should be around union before intersection
          2. or break into separate types for cleaner readability
+         3. opinion: break into separate types
+4. Toggle Props
+   1. `src/04-advanced-props/25-toggle-props.problem.tsx`
+   2. discriminated unions but with boolean
+   3. use disc union; split into 2 diff categories
+      1. can make the discriminator optional in the secondary type
 
 
 
