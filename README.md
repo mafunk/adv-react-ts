@@ -4,6 +4,13 @@
    1. `src/04-advanced-props/22-discriminated-union-props.problem.tsx`
    2. used for flexible component props
    3. opinion: should be used more often in react apps
+2. Destructuring Discriminated Unions
+   1. `src/04-advanced-props/23-destructuring-discriminated-unions.problem.tsx`
+   2. multiple ways of doing this
+      1. `if('title' in props)`
+      2. if you separate the discriminator from the rest of what it is discriminating
+         1. TS can't apply what it understands to the rest of the prop
+      3. if keen on destructuring, destructure within the if/else scope
 
 
 
