@@ -59,6 +59,14 @@
        3.  wrapping with parens and intersect with {}
        4.  React does this for the `AriaRole` type
 10. Extracting Keys and Values from a Type
+    1.  `src/04-advanced-props/31-as-const.problem.ts`
+    2.  `as const`
+        1.  `Object.freeze` does this but is runtime
+            1.  only works at top level
+        2.  declare to TS that is will not change
+    3.  index access types `TYPE[number]`, `TYPE[string]`
+    4.  this is basically what we use as enum
+11. Ensuring Correct Inference for Prop Types
 
 
 
