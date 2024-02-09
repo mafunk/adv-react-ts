@@ -50,6 +50,15 @@
    3. `keyof typeof objectDictionary`
       1. `typeof` turns runtime object into a type
    4. allows for data structures that can be inferred all the way down
+9. Autocompletion Quirk
+   1.  `src/04-advanced-props/30-partial-autocomplete.problem.tsx`
+   2.  make prop looser (allow any strings but autocomplete for known types)
+   3.  `type LooseSize = Size | (string & {});`
+       1.  ^???
+       2.  intersecting with string overrides the types
+       3.  wrapping with parens and intersect with {}
+       4.  React does this for the `AriaRole` type
+10. Extracting Keys and Values from a Type
 
 
 
