@@ -88,7 +88,10 @@
         2.  doesn't override type
 
 
+## Using Generics with Components
 
+1. DRY out Code with Generic Type Helpers
+   1. `src/05-generics/34-type-helpers.problem.tsx`
 
 
 
